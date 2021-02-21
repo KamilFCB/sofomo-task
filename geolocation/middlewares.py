@@ -6,6 +6,9 @@ from sofomo_task.settings import JWT_KEY
 
 
 class AuthorizationMiddleware:
+    """
+        Access token verification middleware
+    """
     def __init__(self, get_response):
         self.get_response = get_response
 

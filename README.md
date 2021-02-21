@@ -11,7 +11,7 @@ After installation application works at `http://localhost:8000/geolocation/`
 
 **Available requests**
 
-1. POST `http://localhost:8000/geolocation/login`  login with username and password equals `admin` - returns JWT token
+1. POST `http://localhost:8000/login`  login with username and password equals `admin` - returns JWT token
 2. POST `http://localhost:8000/geolocation/` adds IP geolocation data to database
 3. GET `http://localhost:8000/geolocation/ip` returns geolocation data from database of the given IP address
 4. DELETE  `http://localhost:8000/geolocation/ip` deletes geolocation data from database of the given IP address

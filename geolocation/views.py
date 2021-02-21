@@ -73,6 +73,9 @@ class GeolocationCreate(generics.CreateAPIView):
 
 @csrf_exempt
 def login(request):
+    """
+        Login view to retrieve access token
+    """
     if request.method != 'POST':
         return JsonResponse(
             {"detail": 'Method {} not allowed.'.format(request.method)}, status=status.HTTP_405_METHOD_NOT_ALLOWED
